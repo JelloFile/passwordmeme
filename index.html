@@ -6,9 +6,11 @@
     <style>
       body{
         text-align:center;
+        font-size:30px;
       }
       h2{
         font-family:sans-serif;
+        
       }
       input{
         font-family:sans-serif;
@@ -27,6 +29,7 @@ addEventListener('keydown', (event) => {
             var f = document.getElementById('f')
       function doThis(){
         if(e.value == "PASSWORD"){
+          f.style="color:red"
 f.textContent= "INCORRECT PASSWORD TRY AGAIN"
       }    if(e.value == "TRY AGAIN"){
 f.textContent= "TRY AGAIN LATER"
