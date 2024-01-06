@@ -1,8 +1,10 @@
 <!DOCTYPE HTML>
 <html id='ee'>
   <body>
+    <div id='eee'>
     <h2 id='f'>TYPE PASSWORD</h2><br>
     <input id='e' placeholder='Type in Password'>
+    </div>
     <style>
       body{
         text-align:center;
@@ -37,7 +39,11 @@ f.textContent= "TRY AGAIN LATER"
       }  if(e.value == "AGAIN LATER"){
 f.textContent= ""
           e.style='display:none'
-          ee.style='background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMP-Bmd0noxVGbDhC9IdF4X2BRWhvlW7CXsKwqHhX8nw&s")'
+          ee.style=`background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMP-Bmd0noxVGbDhC9IdF4X2BRWhvlW7CXsKwqHhX8nw&s") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;`
       }
       }
     </script>
