@@ -4,6 +4,9 @@
     <h2 id='f'>TYPE PASSWORD</h2><br>
     <input id='e' placeholder='Type in Password'>
     <style>
+      body{
+        text-align:center;
+      }
       h2{
         font-family:sans-serif;
       }
@@ -15,12 +18,11 @@
     </style>
     <script>
       
-    eventTarget.addEventListener("keydown", (event) => {
-  if (event.isComposing || event.key == "Enter") {
-doThis()
-  }
-  // do something
-});
+addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+    doThis()
+      }
+    });
       var e = document.getElementById('e')
             var f = document.getElementById('f')
       function doThis(){
