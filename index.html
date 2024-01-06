@@ -34,8 +34,10 @@ addEventListener('keydown', (event) => {
       function doThis(){
         if(e.value == "PASSWORD"){
           f.style="color:red"
-f.textContent= "INCORRECT PASSWORD TRY AGAIN"
-      }    if(e.value == "AGAIN"){
+f.textContent= "PASSWORD IS INCORRECT"
+      }    if(e.value == "INCORRECT"){
+f.textContent= "TRY AGAIN"
+      } if(e.value == "AGAIN"){
 f.textContent= "TRY AGAIN LATER"
       }  if(e.value == "AGAIN LATER"){
 f.textContent= ""
