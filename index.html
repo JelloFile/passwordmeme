@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html id='ee'>
+  <body>
+    <h2 id='f'>TYPE PASSWORD</h2><br>
+    <input id='e' placeholder='Type in Password'>
+    <style>
+      h2{
+        font-family:sans-serif;
+      }
+      input{
+        font-family:sans-serif;
+        
+      }
+      
+    </style>
+    <script>
+      
+    eventTarget.addEventListener("keydown", (event) => {
+  if (event.isComposing || event.key == "Enter") {
+doThis()
+  }
+  // do something
+});
+      var e = document.getElementById('e')
+            var f = document.getElementById('f')
+      function doThis(){
+        if(e.value == "PASSWORD"){
+f.textContent= "INCORRECT PASSWORD TRY AGAIN"
+      }    if(e.value == "TRY AGAIN"){
+f.textContent= "TRY AGAIN LATER"
+      }  if(e.value == "TRY AGAIN LATER"){
+f.textContent= ""
+          e.style='display:none'
+          ee.style='background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMP-Bmd0noxVGbDhC9IdF4X2BRWhvlW7CXsKwqHhX8nw&s")'
+      }
+      }
+    </script>
+  </body>
+</html>
